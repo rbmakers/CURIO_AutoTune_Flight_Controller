@@ -1,7 +1,10 @@
+<div align="center">
+
 # CURIO 雙環自調校飛行控制韌體 — 運作模式說明
 
-對應程式：`CURIO_AutoTune_Dual_PID.ino`（搭配 `elrs.h/.cpp`、`autotune.h/.cpp`、`mahony.h/.cpp`、`BMI088.h/.cpp`）
-硬體平台：CURIO (RP2350 / RP2040)，BMI088 + ELRS/CRSF
+<img width="369" height="493" alt="1782283660066" src="https://github.com/user-attachments/assets/927e5dd2-a20d-4525-9b95-3d939bdcea04" />
+</p>
+<div align="left">
 
 ---
 
@@ -233,3 +236,4 @@ USB 連接 Serial Monitor（115200 baud）時可用，行為與 AUX1/AUX2 觸發
 - 緊急自動減速緩降**不具備地形/障礙物感知能力**，僅單純線性降低油門，請只在淨空場地使用
 - 失聯保護採**立即全斷電**而非緩降，這是刻意的保守選擇（避免無連線狀態下做出無法即時修正的自主決策）；如需改為緩降式失聯行為，需額外評估風險後再實作
 - Flash 增益紀錄**目前無法從地面指令清除**，且僅內環(`r`)單獨完成時不會寫入（見第 5.2 節），規劃調校流程時請留意
+</p>
